@@ -1,0 +1,149 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #F2E5E5, #DBA39A);
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    padding: 30px 40px;
+}
+
+#newtask {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newtask input {
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: black;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #DBA39A;
+    border: none;
+    color: black;
+    cursor: pointer;
+    outline: none;
+}
+
+#tasks {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+
+.task {
+    background-color: #F5EBE0;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #85586F;
+    cursor: pointer;
+}
+
+.task input[type="checkbox"],
+.task button {
+    background-color: #DBA39A;
+    color: black;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.task input[type="checkbox"] {
+    order: 1;
+    margin-left: 10px;
+}
+
+.task button {
+    order: 2;
+}
+
+.task span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 590;
+    flex: 1;
+
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task input:focus {
+    outline: max(2px, 0.15em) currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+
+.task input[type="checkbox"] {
+    order: 3;
+    margin-left: 5px;
+    accent-color: #7D5A5A;
+
+}
+
+.task button {
+    order: 2;
+    margin-right: 10px;
+}
+
+
+.container h2 {
+
+    color: #581C0C;
+    margin-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+
+}
